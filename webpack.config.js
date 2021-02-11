@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'), // каталог для результатов сборки 
-    filename: 'index.js', // имя файла с результатами сборки (должно совпадать с entry point в шаге 1)
+    path:__dirname, // каталог для результатов сборки 
+    filename: 'dist/index.js', // имя файла с результатами сборки (должно совпадать с entry point в шаге 1)
     library: 'ajs', // название нашей библиотеки
     libraryTarget: 'umd', // UMD (Universal Module Definition https://github.com/umdjs/umd) - шаблон, который позволяет использовать RequireJS и браузер
     libraryExport: 'default', // экспортируется имя default
